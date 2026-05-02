@@ -1,0 +1,24 @@
+def sq():
+    side=int(input("Enter side length: "))
+    print("Area: ",side*side)
+    
+def cir(r):
+    print("Area: ",r*r*3.14)
+    
+def rect(a,b):    
+    print("Area: ",a*b)
+
+while(True):
+    print("1. SQUARE")
+    print("2. CIRCLE")
+    print("3. RECTANGLE")
+    print("4. EXIT")
+    choice=int(input("Enter your choice"))
+    if choice==1:
+        sq()
+    elif choice ==2:
+        cir(5)
+    elif choice==3:
+        rect(10,20)
+    else :
+        break
